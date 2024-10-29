@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./mang.css">
+    <script src="./mang.js"></script>
+</head>
+<body>
+    <div class="container">
+        <p> <b> Fullname_Customer </b></p>
+        <input id="fname" type="text">
+        <p> <b>Id_pro </b></p>
+        <input id="id" type="text">
+        <p> <b>Name_Pro </b></p>
+        <input id="prdname" type="text">
+        <p> <b>Quantity_Pro </b></p>
+        <input id="qty" type="text">
+        <p> <b>Price_Pro</b></p>
+        <input id="price" type="text"> <br>
+
+        <input type="button" id="save" value="Save" onclick="save()"></input>
+        <input type="button" id="show" value="Show" onclick="show()"></input>
+        <input type="button" id="reset" value="Reset" onclick="reset()"></input>
+
+        <table class="table">
+            <tr>
+                <th>Auto_Increment</th>
+                <th>Fullname_Customer</th>
+                <th>Id_pro</th>
+                <th>Name_Pro</th>
+                <th>Quantity_Pro</th>
+                <th>Price_Pro</th>
+                <th>Total</th>
+            </tr>
+            <tbody id="tbl"></tbody>
+        </table>
+    </div>
+</body>
+</html>
